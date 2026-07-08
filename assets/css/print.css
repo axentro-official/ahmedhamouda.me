@@ -1,0 +1,10 @@
+body { background: #fff !important; color: #000 !important; }
+.site-header, .site-footer, .hero-ctas, .contact-form, .cert-actions, .menu-toggle, .btn, .modal, .showcase-details summary, .header-actions { display: none !important; }
+.showcase-details { display: block !important; }
+.showcase-details .details-content { display: block !important; }
+.section { padding: 1rem 0 !important; page-break-inside: avoid; }
+a { color: #000 !important; text-decoration: none; }
+a[href]:after { content: none !important; }
+img { max-width: 100% !important; height: auto !important; }
+.cert-img-wrap, .card-image-wrap { height: auto !important; }
+.badge { border: 1px solid #000 !important; color: #000 !important; background: #fff !important; }
