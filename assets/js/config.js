@@ -5,5 +5,5 @@ const CONFIG = {
 
     // Leave this empty string ('') until you create a Formspree account.
     // Example: 'https://formspree.io/f/abcdwxyz'
-    FORMSPREE_ENDPOINT: ''
+    FORMSPREE_ENDPOINT: 'https://formspree.io/f/xaqggjvo'
 };
