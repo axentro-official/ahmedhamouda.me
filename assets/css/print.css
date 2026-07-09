@@ -1,10 +1,392 @@
-body { background: #fff !important; color: #000 !important; }
-.site-header, .site-footer, .hero-ctas, .contact-form, .cert-actions, .menu-toggle, .btn, .modal, .showcase-details summary, .header-actions { display: none !important; }
-.showcase-details { display: block !important; }
-.showcase-details .details-content { display: block !important; }
-.section { padding: 1rem 0 !important; page-break-inside: avoid; }
-a { color: #000 !important; text-decoration: none; }
-a[href]:after { content: none !important; }
-img { max-width: 100% !important; height: auto !important; }
-.cert-img-wrap, .card-image-wrap { height: auto !important; }
-.badge { border: 1px solid #000 !important; color: #000 !important; background: #fff !important; }
+@media print {
+    @page {
+        size: A4;
+        margin: 15mm;
+    }
+
+    /* 1. GLOBAL RESET & COLOR ADJUSTMENT */
+    * {
+        box-shadow: none !important;
+        text-shadow: none !important;
+        transition: none !important;
+        animation: none !important;
+        backdrop-filter: none !important;
+    }
+
+    body {
+        background: #fff !important;
+        color: #173A5E !important; 
+        font-size: 11pt;
+        line-height: 1.5;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        
+    }
+
+    p {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        break-after: avoid;
+    }
+
+    /* 2. HIDE NON-PRINT UI */
+    .site-header,
+    .site-footer,
+    .skip-link,
+    .hero-ctas,
+    .hero-social,
+    .menu-toggle,
+    .lang-switch,
+    .theme-switch,
+    .contact-form, /* Corrected from #contact-form */
+    .cert-actions,
+    .modal,
+    .showcase-details summary,
+    .header-actions .btn,
+    .axentro-workflow + .btn,
+    .footer-controls {
+        display: none !important;
+    }
+
+    /* 3. LINKS & IMAGES */
+    a {
+        color: inherit !important;
+        text-decoration: underline;
+    }
+    a[href]:after {
+        content: none !important; /* Prevent raw URL appending */
+    }
+    img {
+        max-width: 100% !important;
+        height: auto !important;
+    }
+
+    /* 4. HERO PRINT LAYOUT */
+    .hero {
+        padding: 0 0 1cm 0 !important;
+        text-align: start;
+        background: none !important;
+    }
+    .hero-inner {
+        display: flex; /* Replaced float with flex */
+        flex-direction: row;
+        align-items: center;
+        gap: 1cm;
+    }
+    .hero-content {
+        flex: 1;
+        min-width: 0;
+    }
+    .hero-visual {
+        max-width: 4cm;
+        flex-shrink: 0;
+    }
+    .profile-image-frame {
+        max-width: 4cm !important;
+    }
+    .profile-image-frame::before {
+        display: none !important; /* Remove decorative frame */
+    }
+    .profile-image {
+        border-radius: 4px;
+    }
+    .hero-pretitle {
+        font-size: 12pt;
+    }
+    .hero-pretitle::before {
+        display: none !important;
+    }
+    .hero-title {
+        font-size: 24pt;
+        margin-bottom: 0 !important;
+        color: #173A5E !important;
+    }
+    .hero-subtitle {
+        font-size: 14pt;
+        color: #475569 !important;
+        margin-bottom: 0.5cm !important;
+        display: block;
+    }
+    .hero-subtitle .divider {
+        display: none !important;
+    }
+    .hero-desc {
+        font-size: 11pt;
+        color: #475569 !important;
+        max-width: 100% !important;
+    }
+
+    /* 5. SECTION SPACING & HEADINGS */
+    .section {
+        padding: 0.5cm 0 !important;
+        page-break-inside: auto; /* Allow long sections to flow */
+    }
+    .section-title {
+        font-size: 16pt;
+        border-bottom: 2px solid #173A5E;
+        padding-bottom: 0.2cm !important;
+        margin-bottom: 0.5cm !important;
+        text-align: start;
+        break-after: avoid;
+    }
+    .section-title::after {
+        display: none !important;
+    }
+    .section-desc {
+        color: #475569 !important;
+        font-size: 10pt;
+        margin-bottom: 0.5cm !important;
+        text-align: start;
+        max-width: 100% !important;
+    }
+    .subsection-title {
+        font-size: 13pt;
+        color: #173A5E !important;
+        border-inline-start: 3px solid #173A5E;
+        padding-inline-start: 0.3cm !important;
+        margin-top: 0.5cm !important;
+        margin-bottom: 0.3cm !important;
+        break-after: avoid;
+    }
+
+    /* 6. PAGE BREAK CONTROL */
+    .timeline-item,
+    .timeline-content,
+    .track-card,
+    .cap-card,
+    .edu-card,
+    .lang-card,
+    .showcase-card,
+    .cert-card,
+    .workflow-item {
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    /* 7. GRID PRINT LAYOUT */
+    .grid-2, .grid-3, .workflow-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5cm;
+    }
+    .grid-3 {
+        grid-template-columns: 1fr 1fr; /* Max 2 columns for A4 readability */
+    }
+    .grid-2 > *, .grid-3 > *, .workflow-grid > * {
+        min-width: 0;
+    }
+
+    /* 8. PROFILE PATH */
+    .profile-path {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 0.2cm;
+    }
+    .path-step {
+        border: 1px solid #CBD5E1 !important;
+        background: #fff !important;
+        color: #173A5E !important;
+        font-size: 10pt;
+        padding: 0.2cm 0.4cm !important;
+        box-shadow: none !important;
+    }
+    .path-step.highlight {
+        border-color: #173A5E !important;
+        background: #fff !important;
+        color: #173A5E !important;
+        font-weight: bold;
+    }
+    .path-arrow {
+        font-size: 12pt;
+        color: #173A5E !important;
+    }
+
+    /* 9. TIMELINE PRINT SIMPLIFICATION */
+    .timeline {
+        padding-inline-start: 0 !important;
+        margin: 0 !important;
+    }
+    .timeline::before {
+        display: none !important; /* Hide decorative line */
+    }
+    .timeline-item::before {
+        display: none !important; /* Hide decorative marker */
+    }
+    .timeline-item {
+        margin-bottom: 0.5cm !important;
+    }
+    .timeline-content {
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+        padding: 0.4cm !important;
+    }
+    .company {
+        color: #173A5E !important;
+    }
+    .duration {
+        color: #475569 !important;
+    }
+
+    /* 10. AXENTRO SECTION */
+    #axentro {
+        background: #fff !important;
+        color: #173A5E !important;
+        border-top: 1px solid #CBD5E1;
+        border-bottom: 1px solid #CBD5E1;
+        padding: 0.5cm 0 !important;
+    }
+    #axentro::before {
+        display: none !important;
+    }
+    #axentro .section-title,
+    #axentro .section-desc {
+        color: #173A5E !important;
+    }
+    #axentro .section-desc {
+        color: #475569 !important;
+    }
+    .axentro-workflow .step {
+        border: 1px solid #CBD5E1 !important;
+        background: #fff !important;
+        color: #173A5E !important;
+        font-size: 10pt;
+    }
+
+    /* 11. SHOWCASES */
+    .showcase-card {
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+        transform: none !important;
+    }
+    .card-image-wrap {
+        display: none !important; /* Hide images to save space and avoid cropping */
+    }
+    .showcase-details {
+        border-top: 1px solid #CBD5E1 !important;
+        padding-top: 0.3cm !important;
+        margin-top: 0.3cm !important;
+    }
+    .details-content {
+        display: block !important; /* Force visible */
+    }
+    .details-content p {
+        color: #475569 !important;
+        font-size: 10pt;
+    }
+    .details-content strong {
+        color: #173A5E !important;
+    }
+    .disclosure {
+        font-style: italic;
+        color: #475569 !important;
+        background: #F8FAFC !important;
+        border: 1px solid #CBD5E1 !important;
+        border-inline-start: 3px solid #173A5E !important;
+        font-size: 9pt;
+    }
+
+    /* 12. CERTIFICATIONS */
+    .cert-card {
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+    }
+    .cert-img-wrap {
+        display: none !important; /* Hide images to save space */
+    }
+    .cert-body {
+        padding: 0.4cm !important;
+    }
+    .cert-body h4 {
+        font-size: 12pt;
+    }
+    .cert-body .provider,
+    .cert-body .date {
+        color: #475569 !important;
+        font-size: 10pt;
+    }
+
+    /* 13. CAPABILITIES, EDUCATION, LANGUAGES */
+    .track-card, .cap-card, .edu-card, .lang-card {
+        border: 1px solid #CBD5E1 !important;
+        box-shadow: none !important;
+        padding: 0.4cm !important;
+    }
+    .track-card h3, .cap-card h3 {
+        color: #173A5E !important;
+        font-size: 12pt;
+    }
+    .feature-list li {
+        color: #475569 !important;
+        font-size: 10pt;
+    }
+    .feature-list li::before {
+        color: #173A5E !important;
+    }
+    .muted {
+        color: #475569 !important;
+    }
+
+    /* 14. CONTACT SECTION */
+    #contact {
+        background: #fff !important;
+        color: #173A5E !important;
+        padding: 0.5cm 0 !important;
+    }
+    #contact .section-title {
+        color: #173A5E !important;
+        border-bottom: 2px solid #173A5E;
+    }
+    .contact-info {
+        background: #fff !important;
+        color: #173A5E !important;
+    }
+    .contact-info p {
+        font-size: 11pt;
+    }
+    .contact-info strong {
+        color: #173A5E !important;
+    }
+    .contact-info a {
+        color: #173A5E !important;
+        word-wrap: break-word;
+        overflow-wrap: anywhere;
+    }
+
+    /* 15. BADGES */
+    .badge {
+        background: #fff !important;
+        color: #173A5E !important;
+        border: 1px solid #173A5E !important;
+        font-size: 9pt;
+        padding: 0.1cm 0.3cm !important;
+    }
+    .badge-promo {
+        background: #fff !important;
+        color: #173A5E !important;
+        border: 1px solid #173A5E !important;
+    }
+    .badge-live {
+        background: #fff !important;
+        color: #10B981 !important;
+        border: 1px solid #10B981 !important;
+        padding-inline-start: 0.5cm !important;
+    }
+    .badge-live::before {
+        background: #10B981 !important;
+        box-shadow: none !important;
+    }
+    .badge-concept {
+        background: #fff !important;
+        color: #173A5E !important;
+        border: 1px solid #173A5E !important;
+        backdrop-filter: none !important;
+    }
+    .badge-cat {
+        background: #fff !important;
+        color: #475569 !important;
+        border: 1px solid #CBD5E1 !important;
+    }
+}
