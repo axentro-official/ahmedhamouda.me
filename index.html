@@ -55,6 +55,17 @@
           "@type": "WebSite",
           "name": "Ahmed Hamouda Portfolio",
           "url": "https://ahmed-hamouda-portfolio.pages.dev"
+        },
+        {
+          "@type": "WebPage",
+          "name": "Ahmed Hamouda | Senior Collection Specialist & AI Solutions Builder",
+          "url": "https://ahmed-hamouda-portfolio.pages.dev/",
+          "description": "Ahmed Hamouda - Senior Collection Specialist & AI-Assisted Digital Solutions Builder. Bridging strong real-world business experience with modern digital execution.",
+          "isPartOf": {
+            "@type": "WebSite",
+            "name": "Ahmed Hamouda Portfolio",
+            "url": "https://ahmed-hamouda-portfolio.pages.dev"
+          }
         }
       ]
     }
@@ -65,16 +76,17 @@
     
     <header class="site-header">
         <div class="container header-inner">
-            <a href="#main-content" class="logo" aria-label="Ahmed Hamouda Home">AH</a>
+            <a href="index.html" class="logo" aria-label="Ahmed Hamouda Home"><span aria-hidden="true">AH</span></a>
             
             <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
                 <ul>
-                    <li><a href="#profile" data-i18n="nav_profile">Profile</a></li>
-                    <li><a href="#journey" data-i18n="nav_journey">Journey</a></li>
-                    <li><a href="#axentro" data-i18n="nav_axentro">Axentro</a></li>
-                    <li><a href="#showcases" data-i18n="nav_showcases">Showcases</a></li>
-                    <li><a href="#certifications" data-i18n="nav_certs">Certs</a></li>
-                    <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
+                    <li><a href="index.html" class="active" data-i18n="nav_home" aria-current="page">Home</a></li>
+                    <li><a href="about.html" data-i18n="nav_about">About</a></li>
+                    <li><a href="career.html" data-i18n="nav_career">Career</a></li>
+                    <li><a href="axentro.html" data-i18n="nav_axentro">Axentro</a></li>
+                    <li><a href="showcases.html" data-i18n="nav_showcases">Showcases</a></li>
+                    <li><a href="certifications.html" data-i18n="nav_certs">Certifications</a></li>
+                    <li><a href="contact.html" data-i18n="nav_contact">Contact</a></li>
                 </ul>
             </nav>
             
@@ -94,7 +106,7 @@
         </div>
     </header>
 
-    <main id="main-content">
+    <main id="main-content" role="main">
         <section class="hero section">
             <div class="container hero-inner">
                 <div class="hero-content">
@@ -107,25 +119,13 @@
                     </h2>
                     <p class="hero-desc" data-i18n="hero_desc">Bridging strong real-world business experience with a structured modern method for turning business needs into usable digital solutions through AI-assisted workflows.</p>
                     <div class="hero-ctas">
-                        <a href="#showcases" class="btn btn-primary" data-i18n="cta_explore">Explore Work</a>
+                        <a href="showcases.html" class="btn btn-primary" data-i18n="cta_explore">Explore Work</a>
                         <a href="assets/cv/Ahmed-Hamouda-CV.pdf" download class="btn btn-outline" data-i18n="cta_cv">Download CV</a>
                         <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="btn btn-accent" data-i18n="cta_axentro">Visit Axentro</a>
                     </div>
                     <div class="hero-social">
-                        <a
-                            href="https://www.linkedin.com/in/ahmed-hamouda-6505051a5/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="social-link linkedin-link"
-                            aria-label="Visit Ahmed Hamouda on LinkedIn"
-                        >
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                viewBox="0 0 24 24"
-                                fill="currentColor"
-                                aria-hidden="true"
-                                focusable="false"
-                            >
+                        <a href="https://www.linkedin.com/in/ahmed-hamouda-6505051a5/" target="_blank" rel="noopener noreferrer" class="social-link linkedin-link" aria-label="Visit Ahmed Hamouda on LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false">
                                 <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.99h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.32 7.42a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.1 20.45H3.54V8.99H7.1v11.46zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/>
                             </svg>
                             <span>LinkedIn</span>
@@ -134,159 +134,61 @@
                 </div>
                 <div class="hero-visual">
                     <div class="profile-image-frame">
-                        <img
-                            src="assets/images/profile/ahmed-hamouda.webp"
-                            alt="Ahmed Hamouda"
-                            class="profile-image"
-                            width="640"
-                            height="640"
-                            fetchpriority="high"
-                            decoding="async"
-                        >
+                        <img src="assets/images/profile/ahmed-hamouda.webp" alt="Ahmed Hamouda" class="profile-image" width="640" height="640" fetchpriority="high" decoding="async" loading="eager">
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="profile" class="section">
+        <section id="about-preview" class="section bg-surface">
             <div class="container">
-                <h2 class="section-title" data-i18n="profile_title">Professional Profile</h2>
-                <p class="section-desc" data-i18n="profile_desc">My career progression reflects a steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.</p>
+                <h2 class="section-title" data-i18n="about_preview_title">About Me</h2>
+                <p class="section-desc" data-i18n="about_preview_desc">My career progression reflects a steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.</p>
                 <div class="profile-path">
                     <div class="path-step"><span data-i18n="path_1">Retail & Customer Experience</span></div>
                     <div class="path-arrow" aria-hidden="true">→</div>
-                    <div class="path-step"><span data-i18n="path_2">Store Operations</span></div>
-                    <div class="path-arrow" aria-hidden="true">→</div>
-                    <div class="path-step"><span data-i18n="path_3">Administration</span></div>
-                    <div class="path-arrow" aria-hidden="true">→</div>
                     <div class="path-step"><span data-i18n="path_4">Collection Specialist</span></div>
-                    <div class="path-arrow" aria-hidden="true">→</div>
-                    <div class="path-step"><span data-i18n="path_5">Senior Collection Specialist</span></div>
                     <div class="path-arrow" aria-hidden="true">→</div>
                     <div class="path-step highlight"><span data-i18n="path_6">AI-Assisted Digital Solution Building</span></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section bg-surface">
-            <div class="container">
-                <h2 class="section-title" data-i18n="sides_title">Two Sides of My Experience</h2>
-                <div class="grid-2">
-                    <div class="track-card">
-                        <h3 data-i18n="track_a_title">Track A: Business & Operations</h3>
-                        <ul class="feature-list">
-                            <li data-i18n="track_a_1">Accounts Receivable & Collections</li>
-                            <li data-i18n="track_a_2">E-Invoicing & Financial Reporting</li>
-                            <li data-i18n="track_a_3">Administrative & Sales Operations</li>
-                            <li data-i18n="track_a_4">Team Coordination & Customer Relations</li>
-                        </ul>
-                    </div>
-                    <div class="track-card">
-                        <h3 data-i18n="track_b_title">Track B: AI-Assisted Digital Execution</h3>
-                        <ul class="feature-list">
-                            <li data-i18n="track_b_1">Business Requirement Definition</li>
-                            <li data-i18n="track_b_2">AI-Assisted Implementation Workflows</li>
-                            <li data-i18n="track_b_3">Functional Testing & UX Review</li>
-                            <li data-i18n="track_b_4">Iterative Refinement & Deployment</li>
-                        </ul>
-                    </div>
+                <div class="hero-ctas">
+                    <a href="about.html" class="btn btn-primary" data-i18n="learn_more">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section id="journey" class="section">
+        <section id="career-preview" class="section">
             <div class="container">
-                <h2 class="section-title" data-i18n="journey_title">Career Journey</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <span class="badge badge-promo" data-i18n="promo">PROMOTED — MARCH 2024</span>
-                            <h3 data-i18n="role_senior">Senior Collection Specialist</h3>
-                            <p class="company">eNovate — Subsidiary of eFinance Investment Group</p>
-                            <span class="duration" data-i18n="dur_senior">March 2024 — Present</span>
-                            <p data-i18n="desc_senior">Promoted from Collection Specialist in March 2024 following sustained performance and increased responsibility. Manage accounts receivable, handle E-Invoice system submission, and produce monthly performance reports.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 data-i18n="role_collector">Collection Specialist</h3>
-                            <p class="company">eNovate — Subsidiary of eFinance Investment Group</p>
-                            <span class="duration" data-i18n="dur_collector">January 2022 — February 2024</span>
-                            <p data-i18n="desc_collector">Followed up outstanding receivables, prepared client invoices, supported electronic invoicing activities, and coordinated with internal teams to resolve discrepancies.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 data-i18n="role_admin">Assistant Manager, Administrative Affairs</h3>
-                            <p class="company">eNovate — Subsidiary of eFinance Investment Group</p>
-                            <span class="duration" data-i18n="dur_admin">January 2021 — December 2021</span>
-                            <p data-i18n="desc_admin">Oversaw daily administrative operations, organized work plans, coordinated meetings, and supported supplier management.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 data-i18n="role_ast_mgr">Assistant Store Manager</h3>
-                            <p class="company">Aeropostale Egypt</p>
-                            <span class="duration" data-i18n="dur_ast_mgr">January 2020 — December 2020</span>
-                            <p data-i18n="desc_ast_mgr">Supervised sales-team performance, managed inventory accuracy, and prepared sales reports.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 data-i18n="role_cashier">Cashier</h3>
-                            <p class="company">Aeropostale Egypt</p>
-                            <span class="duration" data-i18n="dur_cashier">September 2018 — December 2019</span>
-                            <p data-i18n="desc_cashier">Processed transactions, verified daily sales, and resolved customer payment issues.</p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-content">
-                            <h3 data-i18n="role_sales">Retail Sales Associate</h3>
-                            <p class="company">Zara Egypt & H&M Egypt</p>
-                            <span class="duration" data-i18n="dur_sales">2015 — 2018</span>
-                            <p data-i18n="desc_sales">Worked toward monthly sales targets, provided customer consultation, and maintained merchandising standards.</p>
-                        </div>
-                    </div>
+                <h2 class="section-title" data-i18n="career_preview_title">Career Journey</h2>
+                <p class="section-desc" data-i18n="career_preview_desc">Steady growth in responsibility, from retail operations to financial collections, and now into AI-assisted digital execution.</p>
+                <div class="track-card">
+                    <span class="badge badge-promo" data-i18n="promo">PROMOTED — MARCH 2024</span>
+                    <h3 data-i18n="role_senior">Senior Collection Specialist</h3>
+                    <p class="company">eNovate — Subsidiary of eFinance Investment Group</p>
+                    <span class="duration" data-i18n="dur_senior">March 2024 — Present</span>
+                </div>
+                <div class="hero-ctas">
+                    <a href="career.html" class="btn btn-primary" data-i18n="view_career_journey">View Career Journey</a>
                 </div>
             </div>
         </section>
 
-        <section id="axentro" class="section bg-navy">
+        <section id="axentro-preview" class="section bg-navy">
             <div class="container">
                 <h2 class="section-title" data-i18n="axentro_title">Axentro</h2>
                 <span class="badge badge-live" data-i18n="axentro_status">Live Project</span>
                 <p class="section-desc" data-i18n="axentro_desc">Axentro is my independent digital venture. It represents my structured approach to understanding business needs, defining requirements, and guiding AI-assisted implementation to create usable digital solutions.</p>
-                <div class="axentro-workflow">
-                    <div class="step" data-i18n="ax_step_1">1. Understand Business Need</div>
-                    <div class="step" data-i18n="ax_step_2">2. Define Requirements</div>
-                    <div class="step" data-i18n="ax_step_3">3. Guide AI Implementation</div>
-                    <div class="step" data-i18n="ax_step_4">4. Test & Refine</div>
-                    <div class="step" data-i18n="ax_step_5">5. Coordinate Deployment</div>
-                </div>
-                <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="btn btn-accent" data-i18n="visit_axentro">Visit Axentro.site</a>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container">
-                <h2 class="section-title" data-i18n="workflow_title">How I Build With AI</h2>
-                <div class="workflow-grid">
-                    <div class="workflow-item"><span class="num">1</span><h4 data-i18n="wf_1">Understand the Business Need</h4></div>
-                    <div class="workflow-item"><span class="num">2</span><h4 data-i18n="wf_2">Define Requirements</h4></div>
-                    <div class="workflow-item"><span class="num">3</span><h4 data-i18n="wf_3">Structure the Solution</h4></div>
-                    <div class="workflow-item"><span class="num">4</span><h4 data-i18n="wf_4">Guide AI-Assisted Implementation</h4></div>
-                    <div class="workflow-item"><span class="num">5</span><h4 data-i18n="wf_5">Review and Test</h4></div>
-                    <div class="workflow-item"><span class="num">6</span><h4 data-i18n="wf_6">Troubleshoot</h4></div>
-                    <div class="workflow-item"><span class="num">7</span><h4 data-i18n="wf_7">Refine</h4></div>
-                    <div class="workflow-item"><span class="num">8</span><h4 data-i18n="wf_8">Deploy</h4></div>
+                <div class="hero-ctas">
+                    <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer" class="btn btn-accent" data-i18n="visit_axentro">Visit Axentro.site</a>
+                    <a href="axentro.html" class="btn btn-outline" data-i18n="learn_more">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <section id="showcases" class="section bg-surface">
+        <section id="showcases-preview" class="section bg-surface">
             <div class="container">
                 <h2 class="section-title" data-i18n="showcases_title">Digital Solution Showcases</h2>
-                <p class="section-desc" data-i18n="showcases_desc">Conceptual solutions built through AI-assisted workflows demonstrating structured digital execution. Not presented as completed client work.</p>
+                <p class="section-desc" data-i18n="showcases_desc">Conceptual solutions built through AI-assisted workflows demonstrating structured digital execution.</p>
                 
                 <div class="grid-3">
                     <article class="showcase-card">
@@ -297,35 +199,7 @@
                         <div class="card-body">
                             <h3 data-i18n="show_1_title">Corporate Websites</h3>
                             <p data-i18n="show_1_desc">Premium business website interface design.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_1_need">Establishing a credible online presence for corporate identity.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_1_solution">A structured layout emphasizing services and company values.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_1_features">Service pages, contact forms, about us, career portal.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/portfolio-cv.webp" alt="Portfolio and CV Website Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_2_title">Professional Portfolio & CV Websites</h3>
-                            <p data-i18n="show_2_desc">Original professional profile interface.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_2_need">Personal branding and professional history presentation.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_2_solution">A clean, bilingual interface highlighting experience and skills.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_2_features">Timeline, CV download, contact form, responsive design.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
+                            <a href="showcases.html" class="btn btn-sm btn-outline" data-i18n="view_details">View Details</a>
                         </div>
                     </article>
 
@@ -337,15 +211,7 @@
                         <div class="card-body">
                             <h3 data-i18n="show_3_title">E-Commerce Experiences</h3>
                             <p data-i18n="show_3_desc">Product browsing and checkout experience.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_3_need">Selling products online with a seamless user experience.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_3_solution">An intuitive catalog with streamlined cart and checkout flow.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_3_features">Product search, filtering, cart management, secure checkout.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
+                            <a href="showcases.html" class="btn btn-sm btn-outline" data-i18n="view_details">View Details</a>
                         </div>
                     </article>
 
@@ -357,140 +223,31 @@
                         <div class="card-body">
                             <h3 data-i18n="show_4_title">Booking Systems</h3>
                             <p data-i18n="show_4_desc">Calendar and appointment interface.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_4_need">Managing appointments and reducing scheduling conflicts.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_4_solution">A visual calendar interface for easy date and time selection.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_4_features">Availability sync, automated reminders, cancellation policies.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
+                            <a href="showcases.html" class="btn btn-sm btn-outline" data-i18n="view_details">View Details</a>
                         </div>
                     </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/clinic-management.webp" alt="Clinic Management Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_5_title">Clinic Management Solutions</h3>
-                            <p data-i18n="show_5_desc">Patient and appointment dashboard.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_5_need">Centralizing patient records and clinic schedules.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_5_solution">A secure dashboard integrating patient history and booking.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_5_features">Patient profiles, medical notes, prescription tracking.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/crm-dashboard.webp" alt="CRM Dashboard Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_6_title">CRM & Customer Management</h3>
-                            <p data-i18n="show_6_desc">Customer-management dashboard.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_6_need">Tracking customer interactions and sales pipelines.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_6_solution">A visual CRM dashboard for tracking leads and follow-ups.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_6_features">Lead tracking, communication history, status updates.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/inventory-sales.webp" alt="Inventory and Sales Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_7_title">Inventory & Sales Systems</h3>
-                            <p data-i18n="show_7_desc">Stock and reporting dashboard.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_7_need">Real-time tracking of stock levels and sales performance.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_7_solution">An integrated dashboard linking sales data to inventory deductions.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_7_features">Stock alerts, sales charts, supplier management, export reports.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/qr-digital-menu.webp" alt="QR Digital Menu Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_8_title">QR Digital Menus</h3>
-                            <p data-i18n="show_8_desc">Mobile restaurant menu.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_8_need">Providing contactless menu access to customers.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_8_solution">A mobile-optimized menu interface accessible via QR code scan.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_8_features">Category filtering, item images, multi-language support.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
-
-                    <article class="showcase-card">
-                        <div class="card-image-wrap">
-                            <img src="assets/images/showcases/real-estate-platform.webp" alt="Real Estate Platform Showcase" width="400" height="250" loading="lazy" decoding="async">
-                            <span class="badge badge-concept" data-i18n="concept_badge">Concept Showcase</span>
-                        </div>
-                        <div class="card-body">
-                            <h3 data-i18n="show_9_title">Real Estate & Listing Platforms</h3>
-                            <p data-i18n="show_9_desc">Property listing and search interface.</p>
-                            <details class="showcase-details">
-                                <summary data-i18n="show_details">View Details</summary>
-                                <div class="details-content">
-                                    <p><strong data-i18n="show_need">Business Need:</strong> <span data-i18n="show_9_need">Showcasing properties efficiently to potential buyers.</span></p>
-                                    <p><strong data-i18n="show_solution">Solution Direction:</strong> <span data-i18n="show_9_solution">A search-driven platform with detailed property profiles.</span></p>
-                                    <p><strong data-i18n="show_features">Possible Features:</strong> <span data-i18n="show_9_features">Map integration, advanced filters, agent contact, image galleries.</span></p>
-                                    <p class="disclosure" data-i18n="show_disclosure">Concept showcase demonstrating the structured process used to define and guide AI-assisted digital solutions. Not presented as completed client work.</p>
-                                </div>
-                            </details>
-                        </div>
-                    </article>
+                </div>
+                <div class="hero-ctas">
+                    <a href="showcases.html" class="btn btn-primary" data-i18n="view_all_showcases">View All Showcases</a>
                 </div>
             </div>
         </section>
 
-        <section id="certifications" class="section">
+        <section id="certs-preview" class="section">
             <div class="container">
                 <h2 class="section-title" data-i18n="certs_title">Certifications & Continuous Learning</h2>
-                <p class="section-desc" data-i18n="certs_desc">A structured and continuously developing approach to using AI effectively, responsibly, and practically in business and digital solution workflows.</p>
+                <p class="section-desc" data-i18n="certs_desc">A structured and continuously developing approach to using AI effectively, responsibly, and practically.</p>
                 
-                <h3 class="subsection-title" data-i18n="featured_ai">Featured AI Credentials</h3>
-                <div class="grid-2">
+                <div class="grid-3">
                     <article class="cert-card">
                         <div class="cert-img-wrap">
                             <img src="assets/images/certificates/ai-fluency-builders.webp" alt="AI Fluency for Builders Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
                         </div>
                         <div class="cert-body">
                             <span class="badge badge-cat" data-i18n="cat_ai">AI Credential</span>
-                            <h4>AI Fluency for Builders</h4>
+                            <h3>AI Fluency for Builders</h3>
                             <p class="provider">Anthropic × CodePath.org</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/ai-fluency-builders.webp" data-alt="AI Fluency for Builders Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/6jrtz95e6fd7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
+                            <a href="https://verify.skilljar.com/c/6jrtz95e6fd7" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
                         </div>
                     </article>
 
@@ -500,60 +257,9 @@
                         </div>
                         <div class="cert-body">
                             <span class="badge badge-cat" data-i18n="cat_ai">AI Credential</span>
-                            <h4>AI Fluency: Framework & Foundations</h4>
+                            <h3>AI Fluency: Framework & Foundations</h3>
                             <p class="provider">Anthropic</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/ai-fluency-framework.webp" data-alt="AI Fluency Framework & Foundations Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/aqzt5nm55936" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/ai-fluency-small-business.webp" alt="AI Fluency for Small Businesses Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_ai">AI Credential</span>
-                            <h4>AI Fluency for Small Businesses</h4>
-                            <p class="provider">Anthropic Education (PayPal Collaboration)</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/ai-fluency-small-business.webp" data-alt="AI Fluency for Small Businesses Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/vfqwip85xt6c" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/ai-capabilities-limitations.webp" alt="AI Fluency Capabilities & Limitations Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_ai">AI Credential</span>
-                            <h4>AI Fluency: AI Capabilities & Limitations</h4>
-                            <p class="provider">Anthropic</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/ai-capabilities-limitations.webp" data-alt="AI Fluency AI Capabilities & Limitations Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/fyt5rjjmaahd" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-
-                <h3 class="subsection-title" data-i18n="claude_learning">Claude Learning</h3>
-                <div class="grid-3">
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/claude-cowork.webp" alt="Introduction to Claude Cowork Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_claude">Claude Learning</span>
-                            <h4>Introduction to Claude Cowork</h4>
-                            <p class="provider">Anthropic</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/claude-cowork.webp" data-alt="Introduction to Claude Cowork Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/6yvw53uhyof4" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
+                            <a href="https://verify.skilljar.com/c/aqzt5nm55936" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
                         </div>
                     </article>
 
@@ -563,190 +269,39 @@
                         </div>
                         <div class="cert-body">
                             <span class="badge badge-cat" data-i18n="cat_claude">Claude Learning</span>
-                            <h4>Claude Platform 101</h4>
+                            <h3>Claude Platform 101</h3>
                             <p class="provider">Anthropic Education</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/claude-platform-101.webp" data-alt="Claude Platform 101 Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/daawhsn4kbjo" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/claude-101.webp" alt="Claude 101 Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_claude">Claude Learning</span>
-                            <h4>Claude 101</h4>
-                            <p class="provider">Anthropic Education</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/claude-101.webp" data-alt="Claude 101 Certificate" data-i18n="view_cert">View Certificate</button>
-                                <a href="https://verify.skilljar.com/c/cdbzvgat2fue" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
-                            </div>
+                            <a href="https://verify.skilljar.com/c/daawhsn4kbjo" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-primary" data-i18n="verify_cert">Verify Credential</a>
                         </div>
                     </article>
                 </div>
-
-                <h3 class="subsection-title" data-i18n="pro_training">Professional Training</h3>
-                <div class="grid-3">
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/dale-carnegie-influence-people.webp" alt="How to Influence People Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_pro">Professional Training</span>
-                            <h4>How to Influence People</h4>
-                            <p class="provider">Dale Carnegie Training</p>
-                            <p class="date">March 2020</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/dale-carnegie-influence-people.webp" data-alt="How to Influence People Certificate" data-i18n="view_cert">View Certificate</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/dale-carnegie-world-class-sales.webp" alt="World Class Customer Sales Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_pro">Professional Training</span>
-                            <h4>World Class Customer Sales</h4>
-                            <p class="provider">Dale Carnegie Training</p>
-                            <p class="date">January 2020</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/dale-carnegie-world-class-sales.webp" data-alt="World Class Customer Sales Certificate" data-i18n="view_cert">View Certificate</button>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="cert-card">
-                        <div class="cert-img-wrap">
-                            <img src="assets/images/certificates/effective-communication.webp" alt="Effective Communication Certificate" width="400" height="280" loading="lazy" decoding="async" class="cert-img">
-                        </div>
-                        <div class="cert-body">
-                            <span class="badge badge-cat" data-i18n="cat_pro">Professional Training</span>
-                            <h4>Effective Communication</h4>
-                            <p class="provider">360 Experiential Solutions</p>
-                            <p class="date">January 2018</p>
-                            <div class="cert-actions">
-                                <button type="button" class="btn btn-sm btn-outline view-cert" data-img="assets/images/certificates/effective-communication.webp" data-alt="Effective Communication Certificate" data-i18n="view_cert">View Certificate</button>
-                            </div>
-                        </div>
-                    </article>
+                <div class="hero-ctas">
+                    <a href="certifications.html" class="btn btn-primary" data-i18n="view_all_certs">View All Certifications</a>
                 </div>
             </div>
         </section>
 
-        <section class="section bg-surface">
+        <section id="contact-preview" class="section bg-navy">
             <div class="container">
-                <h2 class="section-title" data-i18n="caps_title">Core Capabilities</h2>
+                <h2 class="section-title" data-i18n="contact_title">Get In Touch</h2>
+                <p class="section-desc" data-i18n="contact_preview_desc">Inquiries regarding AI-assisted digital solutions, business analysis, and collaboration are welcome.</p>
                 <div class="grid-3">
                     <div class="cap-card">
-                        <h3 data-i18n="cap_a_title">Finance & Operations</h3>
-                        <ul class="feature-list">
-                            <li data-i18n="cap_a_1">Accounts Receivable</li>
-                            <li data-i18n="cap_a_2">Collections</li>
-                            <li data-i18n="cap_a_3">Invoicing & E-Invoicing</li>
-                            <li data-i18n="cap_a_4">Financial Reporting</li>
-                        </ul>
+                        <h3 data-i18n="email_label">Email</h3>
+                        <p><a href="mailto:ah.hamouda139@gmail.com">ah.hamouda139@gmail.com</a></p>
                     </div>
                     <div class="cap-card">
-                        <h3 data-i18n="cap_b_title">Business & People</h3>
-                        <ul class="feature-list">
-                            <li data-i18n="cap_b_1">Negotiation</li>
-                            <li data-i18n="cap_b_2">Customer Relations</li>
-                            <li data-i18n="cap_b_3">Team Coordination</li>
-                            <li data-i18n="cap_b_4">Sales Operations</li>
-                        </ul>
+                        <h3 data-i18n="linkedin_label">LinkedIn</h3>
+                        <p><a href="https://www.linkedin.com/in/ahmed-hamouda-6505051a5/" target="_blank" rel="noopener noreferrer">Ahmed Hamouda</a></p>
                     </div>
                     <div class="cap-card">
-                        <h3 data-i18n="cap_c_title">Digital Workflow</h3>
-                        <ul class="feature-list">
-                            <li data-i18n="cap_c_1">Requirement Definition</li>
-                            <li data-i18n="cap_c_2">AI-Assisted Execution</li>
-                            <li data-i18n="cap_c_3">Functional Testing</li>
-                            <li data-i18n="cap_c_4">Deployment Coordination</li>
-                        </ul>
+                        <h3 data-i18n="phone_label">Phone</h3>
+                        <p><a href="tel:+201120143013">01120143013</a></p>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <section class="section">
-            <div class="container grid-2">
-                <div>
-                    <h2 class="section-title" data-i18n="edu_title">Education</h2>
-                    <div class="edu-card">
-                        <h3 data-i18n="edu_1_degree">Bachelor of Commerce</h3>
-                        <p data-i18n="edu_1_school">Cairo University (Blended Learning Program)</p>
-                        <span class="badge" data-i18n="edu_status">In Progress</span>
-                    </div>
-                    <div class="edu-card">
-                        <h3 data-i18n="edu_2_degree">Diploma in Electrical Networks</h3>
-                        <p data-i18n="edu_2_school">Technology Institute</p>
-                    </div>
-                </div>
-                <div>
-                    <h2 class="section-title" data-i18n="lang_title">Languages</h2>
-                    <div class="lang-card">
-                        <h3 data-i18n="lang_ar">Arabic</h3>
-                        <p data-i18n="lang_ar_level">Native</p>
-                    </div>
-                    <div class="lang-card">
-                        <h3 data-i18n="lang_en">English</h3>
-                        <p data-i18n="lang_en_level">Intermediate Working Proficiency</p>
-                        <p class="muted" data-i18n="lang_en_note">Strong familiarity with common professional and work-related terminology.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="section bg-navy">
-            <div class="container">
-                <h2 class="section-title" data-i18n="contact_title">Contact</h2>
-                <div class="grid-2">
-                    <div class="contact-info">
-                        <p><strong data-i18n="email_label">Email:</strong> <a href="mailto:ah.hamouda139@gmail.com">ah.hamouda139@gmail.com</a></p>
-                        <p><strong data-i18n="phone_label">Phone:</strong> <a href="tel:+201120143013">01120143013</a></p>
-                        <p><strong data-i18n="axentro_label">Axentro:</strong> <a href="https://axentro.site/" target="_blank" rel="noopener noreferrer">axentro.site</a></p>
-                        <p>
-                            <strong data-i18n="linkedin_label">LinkedIn:</strong>
-                            <a
-                                href="https://www.linkedin.com/in/ahmed-hamouda-6505051a5/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >Ahmed Hamouda</a>
-                        </p>
-                    </div>
-                    <form id="contact-form" class="contact-form" novalidate>
-                        <div class="form-group honeypot-field">
-                            <label for="company-name" data-i18n="hp_label">Company Name</label>
-                            <input type="text" id="company-name" name="company_name" tabindex="-1" autocomplete="off">
-                        </div>
-                        <div class="form-group">
-                            <label for="name" data-i18n="form_name">Name</label>
-                            <input type="text" id="name" name="name" required aria-describedby="name-error">
-                            <span class="error-msg" id="name-error" aria-live="polite"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="email" data-i18n="form_email">Email</label>
-                            <input type="email" id="email" name="email" required aria-describedby="email-error">
-                            <span class="error-msg" id="email-error" aria-live="polite"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="subject" data-i18n="form_subject">Subject</label>
-                            <input type="text" id="subject" name="subject" required aria-describedby="subject-error">
-                            <span class="error-msg" id="subject-error" aria-live="polite"></span>
-                        </div>
-                        <div class="form-group">
-                            <label for="message" data-i18n="form_message">Message</label>
-                            <textarea id="message" name="message" rows="4" required aria-describedby="message-error"></textarea>
-                            <span class="error-msg" id="message-error" aria-live="polite"></span>
-                        </div>
-                        <button type="submit" class="btn btn-accent" id="submit-btn" data-i18n="form_submit">Send Message</button>
-                        <p class="form-status" id="form-status" aria-live="assertive"></p>
-                    </form>
+                <div class="hero-ctas">
+                    <a href="contact.html" class="btn btn-accent" data-i18n="contact_page_btn">Contact Page</a>
+                    <a href="assets/cv/Ahmed-Hamouda-CV.pdf" download class="btn btn-outline" data-i18n="cta_cv">Download CV</a>
                 </div>
             </div>
         </section>
@@ -765,15 +320,6 @@
             </div>
         </div>
     </footer>
-
-    <div id="cert-modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
-        <div class="modal-overlay" data-close-modal></div>
-        <div class="modal-content">
-            <button type="button" class="modal-close" aria-label="Close modal" data-close-modal>&times;</button>
-            <h2 id="modal-title" data-i18n="cert_modal_title">Certificate View</h2>
-            <img id="modal-img" alt="" class="modal-image" width="800" height="560">
-        </div>
-    </div>
 
     <script src="assets/js/config.js"></script>
     <script src="assets/js/i18n.js"></script>
